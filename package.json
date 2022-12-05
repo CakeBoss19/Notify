@@ -9,7 +9,7 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "Steven_Pedersen <stevenp0294@gmail.com>",

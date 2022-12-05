@@ -1,3 +1,118 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+#content {
+  background: #f5f6fa;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#header-wrapper {
+  width: 100vw;
+  height: 100px;
+  background: rgb(5, 68, 104);
+}
+
+header > h1 {
+  font-size: 4rem;
+  padding-left: 15px;
+}
+
+h1 > span {
+  position: relative;
+  top: 7px;
+}
+
+#sidebar-wrapper {
+  position: fixed;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+  background: rgb(54, 181, 255);
+}
+
+#sidebar {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+#add-project-btn {
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+
+
+#footer-wrapper {
+  width: 100vw;
+  text-align: center;
+  background: rgb(5, 68, 104);
+  position: fixed;
+  bottom: 0px;
+}
+
+header, footer {
+  color: white;
+}
+
+.project-item {
+  padding: ;
+}
+
+.project-header {
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+#main-wrapper {
+  position: relative;
+  left: 225px;
+  width: calc(100vw - 225px);
+  height: calc(100vh - 96px);
+  padding: 20px 0;
+}
+
+main {
+  margin: 0 20px;
+}
+
+main > h3 {
+  font-size: 1.8rem;
+}
+
+#main-task-list {
+  display: flex;
+  gap: 15px;
+}
+
+.main-task-item {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  aspect-ratio: 2/3;
+  background: white;
+  padding: 0 15px;
+}
+
+
+
+.date-and-priority {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-task-item > * {
+  flex: 1;
+}
+
+.task-description {
+  flex: 2;
+}
