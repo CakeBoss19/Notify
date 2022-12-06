@@ -84,6 +84,7 @@ main {
 
 main > h3 {
   font-size: 1.8rem;
+  padding-bottom: 1rem; 
 }
 
 #main-task-list {
@@ -99,8 +100,6 @@ main > h3 {
   background: white;
   padding: 0 15px;
 }
-
-
 
 .date-and-priority {
   display: flex;
