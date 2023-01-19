@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Notify-App</title>
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<header>
+
+			<h1>Notify</h1>
+			<ul>
+				<li class="button-list">
+					<button type="button">New Project</button>
+				</li>
+				<li class="button-list">
+					<button type="button">Button</button>
+				</li>
+				<li class="button-list">
+					<button type="button">Button</button>
+				</li>
+			</ul>
+	</header>
+	<main>
+		<nav>
+			<h2>Projects</h2>
+			<ul>
+				<li class="nav-project">
+					<h4>Project 1</h4>
+					<p>To Do 1</p>
+					<p>To Do 2</p>
+				</li>
+				<li class="nav-project">
+					<h4>Project 2</h4>
+					<p>To Do 1</p>
+				</li>
+				<li class="nav-project">
+					<h4>Project 3</h4>
+					<p>To Do 1</p>
+				</li>
+				<li class="nav-project">
+					<h4>Project 4</h4>
+				</li>
+				<li class="nav-project">
+					<h4>Project 5</h4>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			
+			<form id="new-project-form" action="#">
+				<label for="project-title" hidden="true">Project Title</label>
+				<input type="text" id="project-title" placeholder="Project Title" name="project-title">
+				<br>
+
+				<label for="item-title" hidden="true">To-Do Title</label>
+				<input type="text" id="item-title" placeholder="Item Title" name="item-title">
+				<br>
+
+				<label for="item-description" hidden="true">Description</label>
+				<input type="text" id="item-description" placeholder="Item Description" name="item-description">
+				<br>
+
+				<label for="item-dueDate" hidden="true">Due Date</label>
+				<input type="text" id="item-dueDate" placeholder="Item Due-Date" name="item-dueDate">
+				<br>
+
+				<label for="item-priority" hidden="true">Priority</label>
+				<input type="checkbox" value="false" id="item-priority" name="item-priority" checked>
+				<br>
+
+				<button class="form_button" type="button">submit</button>
+			</form>
+			<br>
+      <br>
+			<form id="new-item-form" action="#">
+				<label for="project-title" hidden="true">Project Title</label>
+				<input type="text" id="project-title" placeholder="Project Title" name="project-title">
+				<br>
+
+				<label for="item-title" hidden="true">To-Do Title</label>
+				<input type="text" id="item-title" placeholder="First-item Title" name="item-title">
+				<br>
+
+				<label for="item-description" hidden="true">Description</label>
+				<input type="text" id="item-description" placeholder="Item Description" name="item-description">
+				<br>
+
+				<label for="item-dueDate" hidden="true">Due Date</label>
+				<input type="text" id="item-dueDate" placeholder="Item Due-Date" name="item-dueDate">
+				<br>
+
+				<label for="item-priority" hidden="true">Priority</label>
+				<input type="checkbox" value="false" id="item-priority" name="item-priority" checked>
+				<br>
+
+				<button class="form_button" type="button">submit</button>
+			</form>
+		</section>
+	</main>
+	<footer><p>im a footer</p></footer>
+</body>
+</html>
